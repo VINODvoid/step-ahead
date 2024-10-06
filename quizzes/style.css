@@ -15,16 +15,16 @@ a {
     text-decoration: none;
     color: #E5E5E5;
 }
+
 ul {
     list-style-type: none;
 }
 
-/* designing nav */
-
-nav{
+/* Designing Nav */
+nav {
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid #444; /* Add a bottom border */
+    border-bottom: 1px solid #444;
     position: fixed;
     top: 0; 
     left: 0; 
@@ -48,8 +48,7 @@ nav{
     padding: 7.5px 0;
 }
 
-/* top-left-nav */
-
+/* Top-left-nav */
 .top-left-nav a {
     display: flex;
     align-items: center;
@@ -58,18 +57,19 @@ nav{
 .top-left-nav img {
     width: 60px;
 }
+
 .top-left-nav a h1 {
     font-size: 24px;
     font-weight: 800;
     padding-left: 10px;
 }
 
-/* top-right-nav */
-
+/* Top-right-nav */
 .top-right-nav ul {
     display: flex;
     align-items: center;
 }
+
 .top-right-nav ul li {
     padding-left: 30px;
 }
@@ -78,8 +78,7 @@ nav{
     font-size: 34px;
 }
 
-/* streak and streak card */
-
+/* Daily Streak */
 .daily-streak {
     display: flex;
     align-items: center;
@@ -96,7 +95,6 @@ nav{
     backdrop-filter: blur(5px); 
     display: none; 
     z-index: 100; 
-
 }
 
 /* Card */
@@ -106,13 +104,11 @@ nav{
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #2F2F2F;
-    padding: 60px;
+    padding: 40px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
-    display: none; /* Hidden by default */
+    display: none; 
     z-index: 100; 
-
-    display: flex;
     flex-direction: column; 
     justify-content: center; 
     align-items: center; 
@@ -130,17 +126,21 @@ nav{
     align-items: center;
     margin-bottom: 20px;
 }
+
 .streak-card-header img {
     width: 34px;
 }
+
 .streak-card-info {
     font-weight: 800;
     margin-bottom: 20px;
 }
+
 .streak-card-discription {
     font-size: 15px;
     margin-bottom: 20px;
 }
+
 #closeCardBtn {
     display: inline-block; 
     padding: 10px 140px; 
@@ -155,12 +155,6 @@ nav{
 #closeCardBtn:hover {
     background-color: #a51818; 
 }
-
-
-
-
-
-
 
 .daily-streak img {
     width: 34px;
@@ -182,19 +176,19 @@ nav{
     height: 100%;
     background-color: #171717;
     z-index: 10; 
-    overflow-y: auto; /* Allow vertical scrolling within the sidebar if needed */
+    overflow-y: auto; 
     display: flex;
     flex-direction: column;
-    border-right: 1px solid #444; /* Add a bottom border */
+    border-right: 1px solid #444; 
 }
 
-/* menu-header */
+/* Menu-header */
 .menu-header {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 20px;
-    border-bottom: 1px solid #444; /* Add a bottom border */
+    border-bottom: 1px solid #444; 
 }
 
 /* Sidebar header icon */
@@ -221,6 +215,7 @@ nav{
     margin-top: auto;
     margin-bottom: 30px;
 }
+
 .left-bottom-nav li {
     display: flex;
     justify-content: flex-start;
@@ -229,16 +224,18 @@ nav{
     margin-left: 20px;
 }
 
-/* main */
-
+/* Main */
 main {
     width: 70%;
     margin: 200px auto;
-    height: 56vh;
+    height: auto; /* Allow height to adjust based on content */
+    padding-bottom: 50px; /* Add space for the footer */
 }
 
 .quizzes-call {
     font-weight: 900;
+    margin-bottom: 20px; /* Add space below */
+    text-align: center; /* Center the text */
 }
 
 .quiz-container {
@@ -251,14 +248,16 @@ main {
 .quiz-heading {
     font-size: 30px;
     font-weight: 900;
-    margin-bottom: 80px;
+    margin-bottom: 40px; /* Reduced margin */
+    text-align: center; /* Center the text */
 }
 
 .category-holder {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 80px;
+    margin-bottom: 40px; /* Reduced margin */
+    flex-wrap: wrap; /* Wrap categories to the next line */
 }
 
 .category {
@@ -272,7 +271,9 @@ main {
     transition: background-color 0.3s;
     display: flex;
     align-items: center;
+    padding: 10px 20px; /* Add padding for better click area */
 }
+
 .category-button:hover {
     background-color: #015e42ce;
 }
@@ -280,10 +281,12 @@ main {
 .category-button img {
     max-width: 100px;
 }
+
 .webdev-img {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+
 .dsa-image {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -291,11 +294,12 @@ main {
 
 .category-button h2 {
     font-size: 18px; 
-    padding: 0 60px;
+    padding: 0 20px; /* Reduced padding for better spacing */
 }
 
 .quiz-for-future {
     margin: 40px 0;
+    text-align: center; /* Center the text */
 }
 
 .color-stripe {
@@ -304,4 +308,55 @@ main {
     width: 100%;
     position: relative;
     bottom: 0;
+}
+
+
+.question-form {
+    background-color: #2F2F2F;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 600px; /* Limiting the max width of the form */
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 100%; /* Make the form groups full width */
+}
+
+.form-label {
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.form-input,
+.form-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #303030;
+    color: #E5E5E5;
+}
+
+.form-input:focus,
+.form-select:focus {
+    border-color: #EF4444; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.submit-button {
+    padding: 10px 20px;
+    background-color: #EF4444;
+    color: #E5E5E5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #a51818; /* Darken button on hover */
 }

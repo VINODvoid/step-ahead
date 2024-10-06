@@ -1,6 +1,4 @@
-// Handle Signup Form Submission
-// Handle Signup Form Submission
-// Handle Signup Form Submission
+
 document.getElementById('signupForm').addEventListener('submit', async (e) => {
     e.preventDefault(); // Prevent default form submission
 
@@ -35,8 +33,10 @@ document.getElementById('signupForm').addEventListener('submit', async (e) => {
 document.getElementById('loginForm').addEventListener('submit', async (e) => {
     e.preventDefault(); // Prevent default form submission
 
-    const email = document.getElementById('identifier').value; // Using email instead of identifier
+    const identifier = document.getElementById('identifier').value; // Email or Phone Number
     const password = document.getElementById('password').value;
+
+    console.log('Attempting to log in with:', { identifier, password }); // Debug log
 
     try {
         const response = await fetch('http://localhost:3000/api/v1/user/login', {
@@ -44,15 +44,24 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ email, password }), // Adjusted to match your backend
+            body: JSON.stringify({ identifier, password }),
         });
 
-        const data = await response.json();
-        alert(data.message);
-        if (response.ok) {
-            // Redirect to the main HTML page after successful login
-            window.location.href = './sample.html'; // Ensure this path is correct
+        // Log the response for debugging
+        console.log('Response status:', response.status);
+
+        // Check if the response is OK (status 200-299)
+        if (!response.ok) {
+            const errorData = await response.json();
+            alert(errorData.message); // Display the error message if login fails
+            return;
         }
+
+        const data = await response.json(); // Parse the response JSON
+        alert(data.message);
+        
+        // Redirect to the main HTML page after successful login
+        window.location.href = './index.html'; // Make sure this path is correct
     } catch (error) {
         console.error('Error:', error);
         alert('Login failed. Please try again.');

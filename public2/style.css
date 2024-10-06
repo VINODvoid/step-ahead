@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #212121;
+    color: #E5E5E5;
+    font-size: 16px;
+    font-family: "Poppins", system-ui;
+}
+
+a {
+    text-decoration: none;
+    color: #E5E5E5;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Designing Nav */
+nav {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #444;
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 10; 
+}
+
+.nav-container {
+    background-color: #171717;
+    width: 100%;
+    position: relative;
+}
+
+.top-side-nav {
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7.5px 0;
+}
+
+/* Top-left-nav */
+.top-left-nav a {
+    display: flex;
+    align-items: center;
+}
+
+.top-left-nav img {
+    width: 60px;
+}
+
+.top-left-nav a h1 {
+    font-size: 24px;
+    font-weight: 800;
+    padding-left: 10px;
+}
+
+/* Top-right-nav */
+.top-right-nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.top-right-nav ul li {
+    padding-left: 30px;
+}
+
+.github-logo {
+    font-size: 34px;
+}
+
+/* Main */
+main {
+    width: 70%;
+    margin: 100px auto; /* Adjust margin to allow space for the nav */
+    padding-bottom: 50px; /* Add space for the footer */
+}
+
+.quiz-container {
+    max-width: 900px; /* Wider container */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #2F2F2F;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.quiz-heading {
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 40px; /* Reduced margin */
+    text-align: center; /* Center the text */
+}
+
+.question-form {
+    background-color: #2F2F2F;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    width: 900px;
+    max-width: 100%; /* Allow the form to take full width */
+}
+
+.quiz-question {
+    margin-bottom: 30px; /* Space between questions */
+}
+
+.form-label {
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.options {
+    padding-left: 20px; /* Add padding for the list */
+}
+
+.option-label {
+    display: flex;
+    align-items: center;
+}
+
+input[type="radio"] {
+    margin-right: 10px; /* Space between radio button and label */
+}
+
+.submit-button {
+    padding: 10px 20px;
+    background-color: #EF4444;
+    color: #E5E5E5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block; /* Center the button */
+    margin: 0 auto; /* Center the button horizontally */
+    font-size: 18px; /* Increase font size */
+}
+
+.submit-button:hover {
+    background-color: #a51818; /* Darken button on hover */
+}

@@ -3,30 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Step Ahead: Quizzes</title>
-    <link rel="stylesheet" href="/quizzes/style.css">
+    <title>Step Ahead: Dashboard</title>
+    <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/8c958d49c3.js" crossorigin="anonymous"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
     <!-- favicon -->
-     <link rel="icon" href="/assets/favicon.png" type="image/x-icon">
+    <link rel="icon" href="/assets/favicon.png" type="image/x-icon">
 </head>
 <body>
     <nav>
         <div class="nav-container">
-            <!-- top-nav -->
             <div class="top-side-nav">
-                <!-- top-left -->
                 <div class="top-left-nav">
                     <a href="/index.html">
                         <img src="/assets/favicon.png" alt="step-ahead" loading="lazy">
                         <h1>STEP AHEAD</h1>
                     </a>
                 </div>
-                <!-- top-right -->
                 <div class="top-right-nav">
                     <ul>
                         <li><a class="github-logo" href="https://github.com/himanshuukholiya/step-ahead" target="_blank"><i class="fa-brands fa-github"></i></a></li>
@@ -45,105 +42,57 @@
             </div>
         </div>
 
-        <!-- Overlay and Card for Daily Streak -->
-        <div class="overlay" id="overlay"></div>
-        <div class="card" id="card">
-            <div class="streak-card">
-                <div class="streak-card-header">
-                    <img src="/assets/redFireStreak.png" alt="streak">
-                    Your Streak
-                </div>
-                <div class="streak-card-info">
-                    Current Streak: 0
-                </div>
-                <div class="streak-card-discription">
-                    Each day watch a video, complete a quiz <br>to keep your streak growing.
-                </div>
-            </div>
-            <button id="closeCardBtn">Close</button>
-        </div>
-
-        <!-- sidebar -->
-         <div class="sidebar">
-            <!-- menu-header -->
+        <div class="sidebar">
             <div class="menu-header">
                 <i class="fa-solid fa-bars"></i>
                 <h2>Menu</h2>
             </div>
-            <!-- left-nav -->
             <div class="menu-contents">
-                <!-- left-top-nav -->
                 <ul class="left-top-nav">
-                   <li><a href="/profile/index.html">
-                       <i class="fa-solid fa-user"></i>
-                       PROFILE
-                   </a></li>
-                   <li><a href="/leaderboard/index.html">
-                       <i class="fa-solid fa-trophy"></i>
-                       LEADERBOARD
-                   </a></li>
-                   <li><a class="quizzes-call" href="/quizzes/index.html">
-                       <i class="fa-solid fa-question"></i>
-                       QUIZZES
-                   </a></li>
-                   <li><a href="/practice/index.html">
-                       <i class="fa-solid fa-book"></i>
-                       PRACTICE
-                   </a></li>
+                    <li><a href="/profile/index.html">
+                        <i class="fa-solid fa-user"></i>
+                        PROFILE
+                    </a></li>
+                    <li><a href="/leaderboard/index.html">
+                        <i class="fa-solid fa-trophy"></i>
+                        LEADERBOARD
+                    </a></li>
+                    <li><a class="quizzes-call" href="/quizzes/index.html">
+                        <i class="fa-solid fa-question"></i>
+                        QUIZZES
+                    </a></li>
+                    <li><a href="/practice/index.html">
+                        <i class="fa-solid fa-book"></i>
+                        PRACTICE
+                    </a></li>
                 </ul>
-                <!-- left-bottom-nav -->
                 <ul class="left-bottom-nav">
-                   <li><a href="/setting/index.html">
-                       <i class="fa-solid fa-gear"></i>
-                       Setting
-                   </a></li>
-                   <li><a href="/help-and-support/index.html">
-                       <i class="fa-solid fa-headphones"></i>
-                       Help and Support
-                   </a></li>
-                   <li><a href="/become-a-mentor/index.html">
-                       <i class="fa-solid fa-graduation-cap"></i>
-                       Become a Mentor
-                   </a></li>
+                    <li><a href="/setting/index.html">
+                        <i class="fa-solid fa-gear"></i>
+                        Setting
+                    </a></li>
+                    <li><a href="/help-and-support/index.html">
+                        <i class="fa-solid fa-headphones"></i>
+                        Help and Support
+                    </a></li>
+                    <li><a href="/become-a-mentor/index.html">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        Become a Mentor
+                    </a></li>
                 </ul>
-            </div>
-         </div>
-    </nav>
-
-    <main>
-        <div class="quiz-container">
-            <div class="quiz-heading">
-                Quiz: Workout for Brain!
-            </div>
-            
-            <div class="category-holder">
-                <a href="/" class="category">
-                    <div class="category-button">
-                        <div class="category-button-details">
-                            <h2>Web Dev</h2>
-                            <p class="quiz-start">Quiz Start</p>
-                        </div>
-                        <img class="webdev-img" src="/assets/webDev.png" alt="webDev" loading="lazy">
-                    </div>
-                </a>
-                <a href="/" class="category">
-                    <div class="category-button">
-                        <img class="dsa-image" src="/assets/dsa.png" alt="dsa" loading="lazy">
-                        <div class="category-button-details">
-                            <h2>DSA</h2>
-                            <p class="quiz-start">Quiz Start</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="quiz-for-future">
-                (More Personalized Quizzes will be added with the help of AI.)
             </div>
         </div>
-    </main>
+    </nav>
+
+   <main>
+    <div class="quiz-container">
+        <h1 class="quiz-heading">Quiz Questions</h1>
+        <div class="question-form" id="quizQuestions"></div>
+        <button class="submit-button" onclick="submitQuiz()">Submit Quiz</button>
+    </div>
+   </main>
 
     <div class="color-stripe"></div>
 </body>
-<script src="/script.js"></script>
+<script src="./script.js"></script>
 </html>
