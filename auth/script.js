@@ -1,27 +1,60 @@
-// Event listener for login form
-document.getElementById('loginForm')?.addEventListener('submit', function(event) {
-    event.preventDefault();
-    const identifier = document.getElementById('identifier').value;
-    const password = document.getElementById('password').value;
+// Handle Signup Form Submission
+// Handle Signup Form Submission
+// Handle Signup Form Submission
+document.getElementById('signupForm').addEventListener('submit', async (e) => {
+    e.preventDefault(); // Prevent default form submission
 
-    console.log('Login Identifier:', identifier);
-    console.log('Password:', password);
-
-    // Here you would typically handle authentication
-});
-
-// Event listener for signup form
-document.getElementById('signupForm')?.addEventListener('submit', function(event) {
-    event.preventDefault();
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const phone = document.getElementById('phone').value;
     const password = document.getElementById('password').value;
 
-    console.log('Signup Name:', name);
-    console.log('Email:', email);
-    console.log('Phone:', phone);
-    console.log('Password:', password);
+    try {
+        const response = await fetch('http://localhost:3000/api/v1/user/signup', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ fullname: name, email, phone, password }),
+        });
 
-    // Here you would typically handle registration
+        const data = await response.json();
+        alert(data.message);
+        if (response.ok) {
+            // Redirect to login page after successful signup
+            window.location.href = './login.html';
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        alert('Signup failed. Please try again.');
+    }
+});
+
+
+// Handle Login Form Submission
+document.getElementById('loginForm').addEventListener('submit', async (e) => {
+    e.preventDefault(); // Prevent default form submission
+
+    const email = document.getElementById('identifier').value; // Using email instead of identifier
+    const password = document.getElementById('password').value;
+
+    try {
+        const response = await fetch('http://localhost:3000/api/v1/user/login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ email, password }), // Adjusted to match your backend
+        });
+
+        const data = await response.json();
+        alert(data.message);
+        if (response.ok) {
+            // Redirect to the main HTML page after successful login
+            window.location.href = './sample.html'; // Ensure this path is correct
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        alert('Login failed. Please try again.');
+    }
 });

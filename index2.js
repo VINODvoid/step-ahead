@@ -7,6 +7,7 @@ const zod = require('zod')
 // const userRouter = require("./router/user")
 const adminRouter = require("./router/admin")
 const courseRouter = require("./router/course.js")
+const userRouter = require("./router/user.js")
 require("dotenv").config()
 const PORT = process.env.PORT || 3000;
 
@@ -20,6 +21,8 @@ app.use(express.json())
 // app.use('/api/v1/user', userRouter)
 app.use('/api/v1/admin', adminRouter)
 app.use('/api/v1/course', courseRouter)
+app.use('/api/v1/user', userRouter);
+
 
 async function main(){
     await mongoose.connect(process.env.MONGO_URL)
