@@ -1,16 +1,80 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background: #121212; 
+    background-color: #212121;
+    color: #E5E5E5;
+    font-size: 16px;
+    font-family: "Poppins", system-ui;
+}
+
+a {
+    text-decoration: none;
+    color: #E5E5E5;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Designing nav */
+nav {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    border-bottom: 1px solid #444; /* Add a bottom border */
+    position: fixed; /* Keep nav fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; 
+}
+
+.nav-container {
+    background-color: #171717;
+    width: 100%;
+}
+
+.top-side-nav {
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-    color: #ffffff;
+    padding: 7.5px 0;
+}
+
+/* Top-left-nav */
+.top-left-nav a {
+    display: flex;
+    align-items: center;
+}
+
+.top-left-nav img {
+    width: 60px;
+}
+
+.top-left-nav a h1 {
+    font-size: 24px;
+    font-weight: 800;
+    padding-left: 10px;
+}
+
+/* Top-right-nav */
+.top-right-nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.top-right-nav ul li {
+    padding-left: 30px;
+}
+
+.github-logo {
+    font-size: 34px;
 }
 
 .container {
@@ -18,6 +82,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-top: 80px; /* Adjust for fixed navbar height */
 }
 
 .form-container {
