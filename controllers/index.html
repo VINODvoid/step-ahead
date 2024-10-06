@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step Ahead</title>
+    <link rel="stylesheet" href="/controllers/style.css">
+    <script src="https://kit.fontawesome.com/8c958d49c3.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,800&display=swap" rel="stylesheet">
+
+    <!-- favicon -->
+     <link rel="icon" href="/assets/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <!-- top-nav -->
+            <div class="top-side-nav">
+                <!-- top-left -->
+                <div class="top-left-nav">
+                    <a href="/index.html">
+                        <img src="/assets/favicon.png" alt="step-ahead" loading="lazy">
+                        <h1>STEP AHEAD</h1>
+                    </a>
+                </div>
+                <!-- top-right -->
+                <div class="top-right-nav">
+                    <ul>
+                        <li><a class="github-logo" href="https://github.com/himanshuukholiya/step-ahead" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a class="daily-streak" href="javascript:void(0);">
+                            <img src="/assets/greyFireStreak.png" alt="streak" loading="lazy">
+                            <p>0</p>
+                        </a></li>
+                        <li><a class="user-profile" href="/profile/index.html">
+                            <i class="fa-solid fa-user"></i>
+                        </a></li>
+                        <li><a class="live-chat-button" href="/global-chat/index.html">
+                            <i class="fa-solid fa-comments"></i>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Overlay and Card for Daily Streak -->
+        <div class="overlay" id="overlay"></div>
+        <div class="card" id="card">
+            <div class="streak-card">
+                <div class="streak-card-header">
+                    <img src="/assets/redFireStreak.png" alt="streak">
+                    Your Streak
+                </div>
+                <div class="streak-card-info">
+                    Current Streak: 0
+                </div>
+                <div class="streak-card-discription">
+                    Each day watch a video, complete a quiz <br>to keep your streak growing.
+                </div>
+            </div>
+            <button id="closeCardBtn">Close</button>
+        </div>
+
+        <!-- sidebar -->
+         <div class="sidebar">
+            <!-- menu-header -->
+            <div class="menu-header">
+                <i class="fa-solid fa-bars"></i>
+                <h2>Menu</h2>
+            </div>
+            <!-- left-nav -->
+            <div class="menu-contents">
+                <!-- left-top-nav -->
+                <ul class="left-top-nav">
+                   <li><a href="/profile/index.html">
+                       <i class="fa-solid fa-user"></i>
+                       PROFILE
+                   </a></li>
+                   <li><a href="/leaderboard/index.html">
+                       <i class="fa-solid fa-trophy"></i>
+                       LEADERBOARD
+                   </a></li>
+                   <li><a href="/quizzes/">
+                       <i class="fa-solid fa-question"></i>
+                       QUIZZES
+                   </a></li>
+                   <li><a href="/quizzes/index.html">
+                       <i class="fa-solid fa-book"></i>
+                       PRACTICE
+                   </a></li>
+                </ul>
+                <!-- left-bottom-nav -->
+                <ul class="left-bottom-nav">
+                   <li><a href="/setting/index.html">
+                       <i class="fa-solid fa-gear"></i>
+                       Setting
+                   </a></li>
+                   <li><a href="/help-and-support/index.html">
+                       <i class="fa-solid fa-headphones"></i>
+                       Help and Support
+                   </a></li>
+                   <li><a href="/become-a-mentor/index.html">
+                       <i class="fa-solid fa-graduation-cap"></i>
+                       Become a Mentor
+                   </a></li>
+                </ul>
+            </div>
+         </div>
+    </nav>
+
+    <main>
+        <!-- hero-section -->
+        <div class="hero-section">
+            <!-- left-side -->
+            <div class="left-hero-section">
+                <h1>LEVEL UP YOUR CODING <br>SKILLS-LEARN, PLAY, AND <br>CONQUER!</h1>
+                <button>Explore Courses</button>
+            </div>
+            <!-- right-side -->
+             <div class="right-hero-seciton">
+                <img class="hero-section-image" src="/assets/heroSection.png" alt="Learn Coding" loading="lazy">
+             </div>
+        </div>
+
+        <!-- explore-categories -->
+         <div class="explore-categories-container">
+            <div class="explore-categories">
+                <div class="category-heading">Explore Categoires</div>
+                <div class="category-holder">
+                    <a href="/" class="category">
+                        <div class="category-button">
+                            <h2>Web <br>Development</h2>
+                            <img class="webdev-img" src="/assets/webDev.png" alt="webDev" loading="lazy">
+                        </div>
+                    </a>
+                    <a href="/" class="category">
+                        <div class="category-button">
+                            <img class="dsa-image" src="/assets/dsa.png" alt="dsa" loading="lazy">
+                            <h2>Data Structure <br>& <br>Algorithm</h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+         </div>
+    </main>
+
+    <section class="cta-section">
+        <h2>Ready to Step Ahead?</h2>
+        <p>Join thousands of learners and start your journey to success.</p>
+        <a href="/" class="cta-button">Get Started</a>
+    </section>
+
+    <div class="color-stripe"></div>
+</body>
+<script src="/script.js"></script>
+</html>

@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #212121;
+    color: #E5E5E5;
+    font-size: 16px;
+    font-family: "Poppins", system-ui;
+}
+
+a {
+    text-decoration: none;
+    color: #E5E5E5;
+}
+ul {
+    list-style-type: none;
+}
+
+/* designing nav */
+
+nav{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #444; /* Add a bottom border */
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 10; 
+}
+
+.nav-container {
+    background-color: #171717;
+    width: 100%;
+    position: relative;
+}
+
+.top-side-nav {
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7.5px 0;
+}
+
+/* top-left-nav */
+
+.top-left-nav a {
+    display: flex;
+    align-items: center;
+}
+
+.top-left-nav img {
+    width: 60px;
+}
+.top-left-nav a h1 {
+    font-size: 24px;
+    font-weight: 800;
+    padding-left: 10px;
+}
+
+/* top-right-nav */
+
+.top-right-nav ul {
+    display: flex;
+    align-items: center;
+}
+.top-right-nav ul li {
+    padding-left: 30px;
+}
+
+.github-logo {
+    font-size: 34px;
+}
+
+/* streak and streak card */
+
+.daily-streak {
+    display: flex;
+    align-items: center;
+}
+
+/* Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(5px); 
+    display: none; 
+    z-index: 100; 
+
+}
+
+/* Card */
+.card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #2F2F2F;
+    padding: 60px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    display: none; /* Hidden by default */
+    z-index: 100; 
+
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.streak-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.streak-card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.streak-card-header img {
+    width: 34px;
+}
+.streak-card-info {
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.streak-card-discription {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+#closeCardBtn {
+    display: inline-block; 
+    padding: 10px 140px; 
+    background-color: #EF4444;
+    color: #E5E5E5;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect */
+#closeCardBtn:hover {
+    background-color: #a51818; 
+}
+
+
+
+
+
+
+
+.daily-streak img {
+    width: 34px;
+}
+
+.user-profile {
+    font-size: 24px;
+}
+
+.live-chat-button {
+    font-size: 20px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 12%;
+    height: 100%;
+    background-color: #171717;
+    z-index: 10; 
+    overflow-y: auto; /* Allow vertical scrolling within the sidebar if needed */
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #444; /* Add a bottom border */
+}
+
+/* menu-header */
+.menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    border-bottom: 1px solid #444; /* Add a bottom border */
+}
+
+/* Sidebar header icon */
+.menu-header i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.menu-contents {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.left-top-nav li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.left-bottom-nav {
+    margin-top: auto;
+    margin-bottom: 30px;
+}
+.left-bottom-nav li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+/* main */
+
+.practice-call {
+    font-weight: 900;
+}
+
+main {
+    width: 70%;
+    margin: 200px auto;
+    height: 56vh;
+}
+
+main h1 {
+    padding: 30px;
+}
+
+
+.color-stripe {
+    background-color: #171717;
+    height: 10px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}

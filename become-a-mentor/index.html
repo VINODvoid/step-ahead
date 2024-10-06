@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step Ahead: Become a Mentor</title>
+
+    <link rel="stylesheet" href="/become-a-mentor/style.css">
+    <script src="https://kit.fontawesome.com/8c958d49c3.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,800&display=swap" rel="stylesheet">
+
+    <!-- favicon -->
+     <link rel="icon" href="/assets/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <!-- top-nav -->
+            <div class="top-side-nav">
+                <!-- top-left -->
+                <div class="top-left-nav">
+                    <a href="/index.html">
+                        <img src="/assets/favicon.png" alt="step-ahead" loading="lazy">
+                        <h1>STEP AHEAD</h1>
+                    </a>
+                </div>
+                <!-- top-right -->
+                <div class="top-right-nav">
+                    <ul>
+                        <li><a class="github-logo" href="https://github.com/himanshuukholiya/step-ahead" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a class="daily-streak" href="javascript:void(0);">
+                            <img src="/assets/greyFireStreak.png" alt="streak" loading="lazy">
+                            <p>0</p>
+                        </a></li>
+                        <li><a class="user-profile" href="/profile/index.html">
+                            <i class="fa-solid fa-user"></i>
+                        </a></li>
+                        <li><a class="live-chat-button" href="/global-chat/index.html">
+                            <i class="fa-solid fa-comments"></i>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Overlay and Card for Daily Streak -->
+        <div class="overlay" id="overlay"></div>
+        <div class="card" id="card">
+            <div class="streak-card">
+                <div class="streak-card-header">
+                    <img src="/assets/redFireStreak.png" alt="streak">
+                    Your Streak
+                </div>
+                <div class="streak-card-info">
+                    Current Streak: 0
+                </div>
+                <div class="streak-card-discription">
+                    Each day watch a video, complete a quiz <br>to keep your streak growing.
+                </div>
+            </div>
+            <button id="closeCardBtn">Close</button>
+        </div>
+
+        <!-- sidebar -->
+         <div class="sidebar">
+            <!-- menu-header -->
+            <div class="menu-header">
+                <i class="fa-solid fa-bars"></i>
+                <h2>Menu</h2>
+            </div>
+            <!-- left-nav -->
+            <div class="menu-contents">
+                <!-- left-top-nav -->
+                <ul class="left-top-nav">
+                   <li><a href="/profile/index.html">
+                       <i class="fa-solid fa-user"></i>
+                       PROFILE
+                   </a></li>
+                   <li><a href="/leaderboard/index.html">
+                       <i class="fa-solid fa-trophy"></i>
+                       LEADERBOARD
+                   </a></li>
+                   <li><a href="/quizzes/index.html">
+                       <i class="fa-solid fa-question"></i>
+                       QUIZZES
+                   </a></li>
+                   <li><a href="/practice/index.html">
+                       <i class="fa-solid fa-book"></i>
+                       PRACTICE
+                   </a></li>
+                </ul>
+                <!-- left-bottom-nav -->
+                <ul class="left-bottom-nav">
+                   <li><a href="/setting/index.html">
+                       <i class="fa-solid fa-gear"></i>
+                       Setting
+                   </a></li>
+                   <li><a href="/help-and-support/index.html">
+                       <i class="fa-solid fa-headphones"></i>
+                       Help and Support
+                   </a></li>
+                   <li><a class="become-a-mentor" href="/become-a-mentor/index.html">
+                       <i class="fa-solid fa-graduation-cap"></i>
+                       Become a Mentor
+                   </a></li>
+                </ul>
+            </div>
+         </div>
+    </nav>
+
+    <main>
+        <div class="mentor">
+            <div class="mentor-left">
+                <img src="/assets/instructor.png" alt="instructor">
+            </div>
+            <div class="mentor-right">
+                <h1>Become A Mentor</h1>
+                <form>
+                    <input type="email" placeholder="Enter Your Email" required>
+                    <textarea placeholder="About Your Course" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <div class="color-stripe"></div>
+</body>
+<script src="/script.js"></script>
+</html>
